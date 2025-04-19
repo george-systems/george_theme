@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEORGE SYSTEMS - Ruby on RailsによるWebシステム開発</title>
+  <meta name="description" content="ジョージシステムズはRuby on RailsによるWebシステム開発をメインに、サービスを展開しています。">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon.png">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <!-- js -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+  <script type="text/javascript" src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
+  <script type="text/javascript"
+    src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/t.min.js"></script>
+</head>
+
+<body>
+  <header id="menu_header">
+    <div id="logo">
+      <a href="#"><img src="images/logo.svg" alt="GEORGE SYSTEMS"></a>
+    </div>
+    <div id="humberger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="menu_wrap">
+      <nav id="menu" class="nav">
+        <ul>
+          <li class="g_nav"><a class="btn" href="#about">About</a></li>
+          <li class="g_nav"><a class="btn" href="https://blog.george-systems.com/">Blog</a></li>
+          <li class="g_nav"><a class="btn" href="#contact">Contact</a></li>
+        </ul>
+      </nav> 
+    </div>
+  </header>
+  <div id="large-header" class="large-header">
+    <canvas id="particle_canvas"></canvas>
+    <div class="main-title ">
+      <h1>GEORGE<br>SYSTEMS<br></h1>
+      <img src="images/h1_jpn.svg" alt="ジョージシステムズ">
+      <p>
+        Ruby・PHP・JavaScriptを活用したシステム開発のエキスパートチームです。
+        私たちは、高品質なシステム開発だけでなく、運用・保守サポートにも力を入れており
+        中小企業から大手企業まで幅広いニーズに対応します。
+      </p>
+    </div>
+  </div>
+  <section id="about">
+    <div id="about_wrap">
+      <div id="about_info" class="wrap">
+        <h2 class="animate__animated">
+          ジョージシステムズは<br>
+          少人数制のクリエイティブな<br>
+          システム開発チームです。
+        </h2>
+        <p class="animate__animated">
+          弊社は少人数制を活かし、スピーディーかつ高品質なシステム開発を提供しております。<br class="sp_dn">
+          少人数体制により、無駄な管理コストを徹底的に削減し、業務を効率的に進めることができるため、<strong>コストを最小限</strong>に抑えることができます。<br class="sp_dn">
+          そのため、中小企業に依頼するよりもコストを抑えたサービスを提供しています。<br class="sp_dn">
+          また、大手企業からの受注実績もあり、<strong>確かな技術力と信頼性</strong>を誇っています。<br class="sp_dn">
+          システム開発だけでなく、運用サポートや保守管理にも力を入れており、<strong>お客様と長期的な信頼関係を築ける</strong>よう努めております。<br class="sp_dn">
+          お客様の声を大切にし、一緒に成長できるパートナーとして、最適なシステムをご提案・実現することをモットーにしています。
+        </p>
+      </div>
+      <div id="about_strong" class="wrap">
+        <h3>弊社の強み</h3>
+        <ul>
+          <li class="animate__animated">
+            <p>中小企業に比べ<br>低価格</p>
+            <figure><img src="images/strong_ico_01.svg" alt=""></figure>
+          </li>
+          <li class="animate__animated">
+            <p>個人ならではの<br>柔軟で誠実な対応</p>
+            <figure><img src="images/strong_ico_02.svg" alt=""></figure>
+          </li>
+          <li class="animate__animated">
+            <p>お客様と長期的な信頼関係の構築</p>
+            <figure><img src="images/strong_ico_03.svg" alt=""></figure>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="about_member" class="wrap">
+      <div class="about_prof_wrap">
+        <div class="prof_left">
+          <img src="images/IMG_3481.jpg" alt="" class="photo_image">
+          <p id="ceo">CEO/Engineer</p>
+          <h2>GEORGE ITO<br>伊藤 譲二</h2>
+        </div>
+        <div class="prof_wrap">
+          <p id="ceo_prof"> [{<br>
+            &ensp;<span class="bold">skill</span>:[Ruby, Rails, PHP,<br>
+            &ensp;&ensp;&ensp;Laravel, JS, Vue],<br><br>
+            &ensp;<span class="bold">middleware</span>: [MySQL,<br>
+            &ensp;&ensp;&ensp;Redis, Cassandra, Hadoop,<br>
+            &ensp;&ensp;&ensp;Apache],<br><br>
+            &ensp;<span class="bold">certified</span>:[Ruby Gold,<br>
+            &ensp;&ensp;&ensp;OCJ-P, LPIC level2,<br>
+            &ensp;&ensp;&ensp;<span class="ja">基本情報技術者]</span><br>
+            }]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap">
+      <h2>CONTACT</h2>
+      <p id="contact_text_ja">お仕事のご依頼は<br class="pc_dn">
+        下記メールアドレスにお願いします。</p>
+      <p id="contact_text_en">Please send your work request to<br class="pc_dn">
+        this email address.</p>
+      <img src="images/contact_arrow.svg" alt="" id="contact_arrow">
+      <p>
+      <address>georgesystemsaws@gmail.com</address>
+      </p>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright&ensp;ⓒ&ensp;2022&ensp;GEORGE&ensp;SYSTEMS</p>
+  </footer>
+  <script type="text/javascript" src="js/style.js"></script>
+</body>
+
+</html>

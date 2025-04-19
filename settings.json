@@ -1,0 +1,14 @@
+// このファイルはVSCodeの設定ファイル(.vscode/settings.json)にコピーして使用してください。
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/wp-content/themes/george_theme", // テーマ開発毎に切り替えてください
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.includeItems": [
+    "/wp-content/themes/george_theme/sass/style.scss" // テーマ開発毎に切り替えてください
+  ]
+}
